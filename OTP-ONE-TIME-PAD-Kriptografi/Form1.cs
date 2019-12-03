@@ -25,40 +25,55 @@ namespace OTP_ONE_TIME_PAD_Kriptografi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String text = textBox1.Text.ToString();
-            String sifre = textBox2.Text.ToString();
-
-            Char[] Atext = text.ToCharArray();
-            Char[] Asifre = sifre.ToCharArray();
-
-            Char[] AsifreliMetin = new char[Atext.Length];
-
-            for(int i = 0; i < Atext.Length; i++)
+            if(textBox1.Text.Length == textBox2.Text.Length)
             {
-                AsifreliMetin[i] = Convert.ToChar(Convert.ToInt32(Atext[i]) ^ Convert.ToInt32(Asifre[i]));
-            }
+                String text = textBox1.Text.ToString();
+                String sifre = textBox2.Text.ToString();
 
-            SifreliMetin = new String(AsifreliMetin);
-            textBox3.Text = Convert.ToString(SifreliMetin);
+                Char[] Atext = text.ToCharArray();
+                Char[] Asifre = sifre.ToCharArray();
+
+                Char[] AsifreliMetin = new char[Atext.Length];
+
+                for (int i = 0; i < Atext.Length; i++)
+                {
+                    AsifreliMetin[i] = Convert.ToChar(Convert.ToInt32(Atext[i]) ^ Convert.ToInt32(Asifre[i]));
+                }
+
+                SifreliMetin = new String(AsifreliMetin);
+                textBox3.Text = Convert.ToString(SifreliMetin);
+            }
+            else
+            {
+                textBox3.Text = "Lütfen Şifrelenecek Metin ve Şifreyi aynı uzunlukta giriniz. (" + textBox1.Text.Length +")" ;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String text = textBox4.Text.ToString();
-            String sifre = textBox5.Text.ToString();
-
-            Char[] Atext = text.ToCharArray();
-            Char[] Asifre = sifre.ToCharArray();
-
-            Char[] AsifreliMetin = new char[Atext.Length];
-
-            for (int i = 0; i < Atext.Length; i++)
+            if(textBox4.Text.Length == textBox5.Text.Length)
             {
-                AsifreliMetin[i] = Convert.ToChar(Convert.ToInt32(Atext[i]) ^ Convert.ToInt32(Asifre[i]));
-            }
+                String text = textBox4.Text.ToString();
+                String sifre = textBox5.Text.ToString();
 
-            SifreliMetin = new String(AsifreliMetin);
-            textBox6.Text = Convert.ToString(SifreliMetin);
+                Char[] Atext = text.ToCharArray();
+                Char[] Asifre = sifre.ToCharArray();
+
+                Char[] AsifreliMetin = new char[Atext.Length];
+
+                for (int i = 0; i < Atext.Length; i++)
+                {
+                    AsifreliMetin[i] = Convert.ToChar(Convert.ToInt32(Atext[i]) ^ Convert.ToInt32(Asifre[i]));
+                }
+
+                SifreliMetin = new String(AsifreliMetin);
+                textBox6.Text = Convert.ToString(SifreliMetin);
+            }
+            else
+            {
+                textBox6.Text = "Lütfen Şifrelenmiş Metin ve Şifreyi aynı uzunlukta giriniz. (" + textBox4.Text.Length + ")";
+            }
+            
         }
     }
 }
