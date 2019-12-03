@@ -2,7 +2,7 @@
 
 One Time Pad algorithm Cryptography application for Windows.
 
-It request one text which we want to encrypt and a key which have same length as text to encrypt/decrypt the text. 
+It request one text which we want to encrypt and a key which have same length as text to encrypt/decyrpt the text. 
 And with their ASCII values, algorithm getting binary values of text and key and multiply this two values and creating encrypted text.
 
 After that to decyrpt it, this time it multiply the key and encyrpited text and our decyrpted text reveals again.
@@ -15,5 +15,10 @@ Change Log:
 Dec 2, 2019 Features;
 
 Added project to Github. Project will get updates soon.
+
+-------------------------------
+Dec 3, 2019 Features;
+
+new stability adjustments. Program now shows required password length for encyrption.
 
 -------------------------------
