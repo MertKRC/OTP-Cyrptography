@@ -1,4 +1,4 @@
-# OTP-ONE-TIME-PAD-Cryptography
+# OTP-ONE-TIME-PAD-Cyrptography
 
 One Time Pad algorithm Cryptography application for Windows.
 
