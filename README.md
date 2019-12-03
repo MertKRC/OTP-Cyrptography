@@ -22,3 +22,8 @@ Dec 3, 2019 Features;
 new stability adjustments. Program now shows required password length for encyrption.
 
 -------------------------------
+Dec 3, 2019 Features;
+
+Added huge functionality updates. Now there is a button which create random password for you. Also you can copy each textboard's text to clipboard by pressing the label which is left on them.
+
+-------------------------------
