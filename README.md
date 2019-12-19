@@ -9,6 +9,10 @@ After that to decyrpt it, this time it multiply the key and encyrpited text and 
 
 Note that; to make this work properly, we are accepting that our text and key have same length. And also to make this application practicable, we are also accepting that sender and reciever both know the key.
 
+### Application Run
+![OTP-Cyrptography Run](https://raw.githubusercontent.com/MertKRC/OTP-Cyrptography/master/Github/cyrptography.gif)
+
+
 Change Log:
 -------------------------------
 Dec 2, 2019 Features;
