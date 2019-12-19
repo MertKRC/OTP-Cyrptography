@@ -46,6 +46,7 @@ namespace OTP_ONE_TIME_PAD_Kriptografi
         }
         String SifreliMetin;
 
+        //Manuel encyrpt button
         private void button1_Click(object sender, EventArgs e)
         {
             //We can't global this two, because we want it to work everytime we press the button
@@ -75,6 +76,7 @@ namespace OTP_ONE_TIME_PAD_Kriptografi
             textBox2Length.Text = "(" + textBox2.Text.Length + ")";
         }
 
+        //Random encyrpt button
         private void button3_Click(object sender, EventArgs e)
         {
             text = textBox1.Text.ToString();
