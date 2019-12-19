@@ -98,7 +98,7 @@ namespace OTP_ONE_TIME_PAD_Kriptografi
             //This algorihm getting each char of text and password and converting them to decimal values in ASCII table
             //After that it multiplying this two variable's binary value in XOR gate(using ^ for this in C#) 
             //and finally converting this final value to char and equals this value to encyrptedText's i. value
-            //For example; text is A and password is a
+            //For example; text is F and password is b
             //F's Decimal value in ASCII table is 70, 70 means 1000110 in binary
             //b's Decimal value in ASCII table is 98, 98 means 1100010 in binary
             //If we multiply this two value in XOR(if two of them same, write 0, if two of them diffrent write 1 for each digit)
